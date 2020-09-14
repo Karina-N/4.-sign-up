@@ -29,6 +29,21 @@ body {
         padding: 40px;
     }
 
+        .title {
+                
+        }
+
+        .footer {
+
+        }
+            .link {
+
+            }
+
+            .amp {
+
+            }
+
     .right-column {
         display: inline-block;
         float: left;
@@ -36,3 +51,36 @@ body {
         background-color: white;
         padding: 60px;
     }
+
+        .close {
+
+        }
+
+        .form {
+
+        }
+
+            .form-row {
+
+            }
+
+            label {
+
+            }
+
+            input {
+
+            }
+
+            .btn {
+
+            }
+
+            .or {
+
+            }
+            
+            .blue-link {
+
+            }
+
