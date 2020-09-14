@@ -27,6 +27,20 @@ body {
         width: 40%;
         background-color: #68a9d9;
         padding: 40px;
+        color: white;
+        height: 420px;
+        margin-top: 20px;
+        background-image: url(./kalnai.jpg);
+        background-repeat: no-repeat;
+
+        /*  background-size: cover;
+            Reiskia didins nuptrauka kol uzpildys reikiama vieta */
+        background-size: cover;
+
+        /*  background-position: 
+            Nurodai kuria nuotraukos dali nori sutalpinti/matyti - jeigub netelpa*/
+        background-position: center;
+
     }
 
         .title {
@@ -37,7 +51,8 @@ body {
 
         }
             .link {
-
+                color: white;
+                
             }
 
             .amp {
@@ -50,6 +65,7 @@ body {
         width: 60%;
         background-color: white;
         padding: 60px;
+
     }
 
         .close {
