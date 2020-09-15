@@ -10,15 +10,33 @@ word-break: break-all;
 
 
 body {
-    background-color: rgb(25, 143, 143);
+    
 }
+
+    .background {
+
+        /* vw - view width (geriau nenaudoti)
+            vh - view height */
+
+        width: 100vw;
+        height: 100vh;
+        filter: blur(20px);
+        object-fit: cover;
+        object-position: bottom right;
+    }
 
 .container {
     display: inline-block;
     width: 800px;
-    margin-top: 100px;
-    margin-left: calc( (100% - 800px) / 2);
 
+    /* sekancios keturios eilutes: pastato 'container'
+        tiesiai i ekrano viduri. nebutina rasyti position prie 'body'
+        nes jo position relative by default */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
     .left-column {
@@ -28,8 +46,7 @@ body {
         background-color: #68a9d9;
         padding: 40px;
         color: white;
-        height: 420px;
-        margin-top: 20px;
+
         background-image: url(./kalnai.jpg);
         background-repeat: no-repeat;
 
@@ -41,6 +58,10 @@ body {
             Nurodai kuria nuotraukos dali nori sutalpinti/matyti - jeigub netelpa*/
         background-position: center;
 
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+
     }
 
         .title {
@@ -48,7 +69,11 @@ body {
         }
 
         .footer {
-
+            font-size: 15px;
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+            right: 30px;
         }
             .link {
                 color: white;
@@ -61,20 +86,35 @@ body {
 
     .right-column {
         display: inline-block;
-        float: left;
+        float: right;
         width: 60%;
         background-color: white;
         padding: 60px;
+        position: relative;
 
     }
 
         .close {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 56px;
+            font-size: 30px;
+            color: grey;
+            cursor: pointer;
 
+            /* pozicijos keitimas */
+            position: absolute;
+            top: 0;
+            right: 0;
+            
         }
 
         .form {
             display: inline-block;
             width: 100%;
+            
         }
 
             .form-row {
@@ -104,7 +144,6 @@ body {
                     font-size: 15px;
                     border: none;
                     border-bottom: 1px solid lightgrey;
-
                 }
 
                 .btn {
@@ -130,6 +169,7 @@ body {
                     display: inline-block;
                     padding-top: 10px;
                     line-height: 20px;
+                    text-decoration: none;
 
                 }
 
